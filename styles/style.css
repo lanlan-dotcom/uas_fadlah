@@ -1,0 +1,212 @@
+/* Background */
+.stApp {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+/* Tombol */
+.stButton > button {
+    width: 100%;
+    height: 90px;
+
+    background-color: #330000;
+    color: white;
+
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover */
+.stButton > button:hover {
+    background-color: #990000;
+    color: white;
+    box-shadow: 0px 0px 15px red;
+}
+
+/* Card Narasi */
+.story-box {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #660000;
+    box-shadow: 0 0 20px rgba(255,0,0,0.3);
+}
+
+/* Judul */
+.game-title {
+    text-align: center;
+    color: #ff3333;
+    text-shadow: 0px 0px 15px red;
+}
+
+/* Card Start */
+.start-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+/* Tombol Start */
+.stButton > button {
+
+    background-color: #0d0d0d;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    height: 70px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+
+    border-color: red;
+
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+
+    transform: translateY(-2px);
+}
+
+/* tombol merah kedip */
+.glow-red {
+    color: #ff2a2a;
+    animation: horror-glow 2s infinite alternate;
+}
+
+@keyframes horror-glow {
+
+    0% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px red,
+            0 0 10px red;
+    }
+
+    50% {
+        opacity: 0.7;
+        text-shadow:
+            0 0 20px red,
+            0 0 40px red;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow:
+            0 0 10px red,
+            0 0 30px red,
+            0 0 50px red;
+    }
+}
+
+/* tambahan */
+.choice-btn {
+    background: #0b0b0b;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 18px;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.choice-btn:hover {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+}
+
+.choice-letter {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid red;
+    color: red;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.story-box{
+    background:#171717;
+    border:2px solid #aa0000;
+    border-radius:20px;
+
+    padding:25px;
+
+    font-size:15px;
+    line-height:1.8;
+
+    margin-top:20px;
+    margin-bottom:20px;
+
+    box-shadow:
+    0 0 20px rgba(255,0,0,.4);
+}
+.game-title{
+    text-align:center;
+    color:#ff3333;
+    text-shadow:0 0 20px red;
+    margin-bottom:30px;
+}
+/* =========================
+   PATH TRACKER
+========================= */
+
+/* Box Ending */
+[data-testid="stVerticalBlock"] div[data-testid="stContainer"]{
+    background: linear-gradient(
+        135deg,
+        #111111,
+        #181818
+    );
+
+    border: 1px solid #222 !important;
+
+    border-left: 4px solid #ff0000 !important;
+
+    border-radius: 16px !important;
+
+    padding: 15px !important;
+
+    margin-bottom: 15px !important;
+
+    box-shadow:
+        0 0 15px rgba(255,0,0,0.15);
+}
+
+/* Caption Langkah */
+[data-testid="stCaptionContainer"]{
+    color: #888 !important;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+/* Nama Ruangan */
+h3{
+    color: white !important;
+    font-size: 20px !important;
+}
+
+/* Pilihan */
+strong{
+    color: #ff4444;
+}
